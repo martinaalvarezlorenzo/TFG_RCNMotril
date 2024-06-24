@@ -1,0 +1,311 @@
+body{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header{
+    width: 100%;
+    height: 15%;
+}
+.logo{
+    float: left;
+    width: 90%;
+    height: 90%;
+    clear: left;
+    padding-left: 10%;
+}
+
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.nombreClub{
+    text-align: center;
+}
+
+.nombreClub h1 {
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 400%; 
+    color: #279f5b; 
+    text-shadow: 
+        0 1px 0 #55c97b,
+        0 2px 0 #1f7838,
+        0 3px 0 #21622e,
+        0 4px 0 #27682d,
+        0 5px 0 #164219,
+        0 6px 1px rgba(0, 0, 0, 0.05), 
+        0 0 5px rgba(0, 0, 0, 0.05),
+        0 1px 3px rgba(0, 0, 0, 0.1),
+        0 3px 5px rgba(0, 0, 0, 0.08),
+        0 5px 10px rgba(0, 0, 0, 0.1),
+        0 10px 10px rgba(0, 0, 0, 0.08),
+        0 20px 20px rgba(0, 0, 0, 0.05);  
+}
+
+
+.cabecera{
+    display: grid;
+    grid-template-columns: 15% 70% 10%;
+    background-color: white;
+    overflow: auto;
+    align-items: center;
+    margin-left: 0;
+}
+
+body{
+    background-image: url('imagenes/piscina.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+    box-sizing: content-box;
+    overflow-y: scroll !important;
+    width: 100% !important;
+}
+
+/*MENU*/
+ul.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    background-image: linear-gradient(to right, #0eaa69, #106e39);
+    color: white;
+    padding: 1%;
+}
+ul.menu li{
+    list-style: none;
+}
+
+
+ul.menu a {
+    position: relative;
+    display: block;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+}
+
+ul.menu .border {
+    position: absolute;
+    left: 0;
+    background: currentColor;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+ul.menu .border-top,
+ul.menu .border-bottom {
+    width: 100%;
+    height: 5%;
+    transform: scaleX(0);
+}
+
+ul.menu .border-left,
+ul.menu .border-right {
+    width: 1%;
+    height: 100%;
+    transform: scaleY(0);
+}
+
+ul.menu .border-top,
+ul.menu .border-left,
+ul.menu .border-right {
+    top: 0;
+}
+
+ul.menu .border-bottom {
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+ul.menu .border-top {
+    transform-origin: top left;
+}
+
+ul.menu .border-left {
+    transform-origin: bottom left;
+}
+
+ul.menu .border-right {
+    left: auto;
+    right: 0;
+    transform-origin: top right;
+}
+
+:root {
+    --transition-duration: 0.2s;
+    --transition-delay: 0.2s;
+}
+
+ul.menu a:hover .border-top,
+ul.menu a:hover .border-bottom {
+    transform: scaleX(1);
+}
+
+ul.menu a:hover .border-left,
+ul.menu a:hover .border-right {
+    transform: scaleY(1);
+}
+
+ul.menu a:hover .border-right {
+    transition-delay: var(--transition-delay);
+}
+
+ul.menu a:hover .border-bottom {
+    transition-delay: calc(var(--transition-delay) * 2);
+}
+
+ul.menu a:hover .border-left {
+    transition-delay: calc(var(--transition-delay) * 3);
+}
+
+/*footer*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-image: linear-gradient(to right, #0eaa69 0%, #11793e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-top: auto;
+}
+
+.nombre h4 {
+    margin: 0;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.iconos a {
+    margin-right: 40%;
+}
+
+/*FORMULARIO*/
+
+#login {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2%;
+    text-align: center;
+    background:#163b3d80 ; 
+    padding: 2%;
+    border-radius: 15px;
+}
+#login #imagen {
+    width: 70%;
+    height: 20%;
+    font-size: 80%;
+    text-align: center;
+}
+
+#login h1 {
+    color: white;
+
+}
+
+#login .form .item {
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+}
+
+#login .form .item input {
+    width: 95%;
+    font-size: 120%;
+    border: 0;
+    border-bottom: 3px solid white;
+    padding: 2% 5%;
+    background: #ffffff00; 
+    color: white;
+}
+
+#login .form .item input[placeholder] {
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    font-family: Arial Black; 
+}
+
+.container{
+    margin-top: 2%;
+}
+
+
+#cat {
+    width: 100%; 
+    max-width: 90%;
+    box-sizing: border-box; 
+    padding: 5%; 
+    font-size: 100%; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+  }
+  
+
+  /*botones inicio sesion y solicitud registro*/
+
+.btnSR{
+    color:#29733c !important;
+    font-weight:500 !important;
+}
+
+/*FORMULARIO BUSQUEDA*/
+#loginB {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2%;
+    text-align: center;
+    background: #163b3d80;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+#loginB .form .item {
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    display: inline-block; 
+    width: 22%; 
+    margin-right: 2%; 
+}
+
+#loginB .form .item select {
+    width: 100%; 
+    font-size: 100%; 
+}
+
+#loginB .form .item label {
+    display: block;
+    margin-bottom: 1%; 
+}
+
+.titulo{
+    color: #106e39 ;
+}
+
+
